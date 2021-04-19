@@ -9,14 +9,16 @@ nav {
   color: #FFFFFF;
   height: 120px;
   padding: 1.5rem;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 /* nav brand logo*/
 nav span {
   display: flex;
   align-items: center;
-  font-family: 'Bungee', sans-serif;
+  font-family: 'Bungee', cursive;
 }
 
 .navbar {
