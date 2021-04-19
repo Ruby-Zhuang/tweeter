@@ -15,8 +15,8 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #1b262c;
+  background-color: #bbe1fa;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
@@ -24,3 +24,10 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+main {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  height: 900px;
+}

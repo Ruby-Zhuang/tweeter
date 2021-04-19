@@ -5,11 +5,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: #4056A1;
-  color: #FFFFFF;
+  background-color: #1b262c;
+  color: #bbe1fa;
   height: 120px;
   padding: 1.5rem;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 1;
 }
