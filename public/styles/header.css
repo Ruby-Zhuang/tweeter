@@ -1,0 +1,14 @@
+/*
+ * header styles
+ */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: lightsteelblue;
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  height: 520px;
+  position: relative;
+  width: 100%;
+}
