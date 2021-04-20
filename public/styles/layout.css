@@ -16,7 +16,8 @@ html {
 
 body {
   color: #1b262c;
-  background-color: #bbe1fa;
+  /* background-color: #bbe1fa; */
+  background: linear-gradient(to bottom right, #FFB3C8, #C4F1F1);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
@@ -27,6 +28,7 @@ body {
 main {
   display: flex;
   justify-content: center;
+  
   margin: auto;
   width: 90%;
   height: 900px;

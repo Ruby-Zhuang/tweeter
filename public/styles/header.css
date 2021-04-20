@@ -6,13 +6,15 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: #0f4c75;
-  background-image: url("https://www.transparenttextures.com/patterns/dust.png");
-  color: #1b262c;
+
   height: 520px;
   padding-top: 120px;
   position: relative;
   width: 100%;
+  
+  background-color: #C4F1F1;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  color: #1b262c;
 }
 
 header h2 {

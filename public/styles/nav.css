@@ -5,19 +5,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: #1b262c;
-  color: #bbe1fa;
+  
   height: 120px;
   padding: 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 1;
+
+  background-color: #72DCCA;
+  color: #1b262c;
 }
 
 /* nav brand logo*/
 nav span {
   display: flex;
   align-items: center;
+
   font-family: 'Bungee', sans-serif;
   font-size: 30px;
 }
@@ -30,5 +33,5 @@ nav span {
 }
 
 .fa-angle-double-down {
-  color: red;
+  color: #ff6060;
 }
