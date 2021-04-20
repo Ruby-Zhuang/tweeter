@@ -16,7 +16,7 @@ nav {
   color: #1b262c;
 }
 
-/* nav brand logo*/
+/* Nav tweeter brand logo*/
 nav span {
   display: flex;
   align-items: center;
@@ -25,6 +25,7 @@ nav span {
   font-size: 30px;
 }
 
+/* Navbar right side (text and compose icon) */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -32,6 +33,7 @@ nav span {
   align-items: center;
 }
 
+/* Compose icon */
 .fa-angle-double-down {
   color: #ff6060;
 }

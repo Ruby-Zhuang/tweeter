@@ -57,3 +57,12 @@ article.tweet footer {
 article.tweet footer i {
   color: #F98AAC;
 }
+
+/* HOVER STATES*/
+.tweet:hover {
+  box-shadow: 6px 6px 2px 5px #FFB3C8;
+}
+
+article.tweet footer i:hover {
+  color: #72DCCA;
+}
