@@ -6,7 +6,6 @@ div button {
   border: none;
   border-radius: 4px;
   color: #bbe1fa;
-  font-family: 'Bungee', sans-serif;
   padding: 0.2rem 0.5rem;
 }
 
@@ -16,6 +15,7 @@ div button {
 
 .new-tweet div {
   display: flex;
+  font-family: 'Bungee', sans-serif;
   justify-content: space-between;
 }
 
