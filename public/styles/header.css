@@ -1,7 +1,11 @@
 /*
  * header styles
  */
-header {
+ header h2 {
+   margin: 0 auto 1.5rem;
+  }
+
+.profile {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,8 +19,4 @@ header {
   background-color: #C4F1F1;
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   color: #1b262c;
-}
-
-header h2 {
-  margin: 0 auto 1.5rem;
 }

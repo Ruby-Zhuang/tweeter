@@ -10,9 +10,9 @@ main button {
   color: #1b262c;
 }
 
-.new-tweet {
+/* .new-tweet {
   width: 100%;
-}
+} */
 
 .new-tweet div {
   display: flex;

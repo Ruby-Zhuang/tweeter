@@ -1,0 +1,59 @@
+/*
+* Posted tweets styles
+*/
+/* TWEET CONTAINER */
+.tweet {
+  border: 0.2rem solid #1b262c;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* TWEET HEADER (AVATAR, NAME AND HANDLE) */
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tweet avatar image */
+article.tweet img {
+  margin-right: 0.5rem;
+  width: 40px;
+}
+
+/* Tweet's username */
+article.tweet .username {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Tweet's handle */
+article.tweet .handle{
+  color: #515151;
+  font-size: 1.5rem;
+}
+
+/* TWEET CONTENT/TEXT */
+article.tweet p {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.2rem solid #1b262c;
+}
+
+/* TWEET FOOTER (DATE AND ICONS) */
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+
+  color: #515151;
+  font-size: 1.1rem;
+}
+
+/* Tweet icons */
+article.tweet footer i {
+  color: #F98AAC;
+}
