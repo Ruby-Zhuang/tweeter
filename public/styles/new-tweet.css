@@ -32,3 +32,8 @@ main button {
   color: #1b262c;
   resize: none;
 }
+
+/* Added to text counter once character limit is exceeded */
+.exceeded-limit {
+  color: #ff6060;
+}
