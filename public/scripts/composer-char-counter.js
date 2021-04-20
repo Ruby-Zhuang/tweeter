@@ -4,11 +4,15 @@
  */
 
 $(document).ready(function() {
-  $('.new-tweet textarea').on('input', inputEvent);
+  $('#tweet-text').on('input', inputEvent);
 });
 
 const inputEvent = function(event) {
   const maxChar = 140;
   const charCounter = $(this).val().length;
-  console.log(maxChar - charCounter);
+  const charLeft = maxChar - charCounter;
+  const counter = $(this).parent().find('.counter');
+
+  counter.text(charLeft);
+
 };
