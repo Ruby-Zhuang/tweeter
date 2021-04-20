@@ -1,0 +1,31 @@
+/*
+* new-tweet styles
+*/
+div button {
+  background-color: #0f4c75;
+  border: none;
+  border-radius: 4px;
+  color: #bbe1fa;
+  font-family: 'Bungee', sans-serif;
+  padding: 0.2rem 0.5rem;
+}
+
+.new-tweet {
+  width: 100%;
+}
+
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tweet-text {
+  background-color: inherit;
+  border: none;
+  border-bottom: 0.2rem solid #1b262c;
+  margin-bottom: 1rem;
+  color: #1b262c;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
