@@ -5,6 +5,7 @@
 .tweet {
   /* border: 0.2rem solid #1b262c; */
   border-radius: 12px;
+  margin-bottom: 2rem;
   padding: 1.5rem;
 
   background-color: #E4FFFE;
