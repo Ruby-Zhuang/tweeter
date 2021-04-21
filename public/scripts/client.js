@@ -8,13 +8,20 @@ const submitHandler = function(event) {
   event.preventDefault(); // Prevent page from refreshing
   const newTweet = $(this).serialize(); // Serializes form data into a query string
 
-  // POST request to the /tweets endpoint using AJAX
+  // Tweet validation
+  const tweetError = tweetValidation();
+  if (tweetError) {
+    return;
+  }
+
+  // POST request to the /tweets endpoint using AJAX only if there are no errors for the tweet
   $.ajax({
     url: '/tweets',
     method: 'POST',
     data: newTweet
   }).then(() => {
-    console.log(newTweet);
+    $(this).find('#tweet-text').val('');  // Clear textarea
+    $(this).find('.counter').text(140);   // Reset counter
   });
 };
 

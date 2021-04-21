@@ -5,14 +5,11 @@
 
 // Fetch and load all the current tweets
 const loadTweets = function() {
-  // GET request to the /tweets endpoint using AJAX to get all the tweets
-  $.ajax({
-    url: '/tweets',
-    method: 'GET',
-    dataType: 'JSON'
-  }).then((tweets) => {
-    renderTweets(tweets);
-  });
+  // GET request to the /tweets endpoint using AJAX to get all the tweets (default is JSON)
+  $.ajax('/tweets')
+    .then((tweets) => {
+      renderTweets(tweets);
+    });
 };
 
 /*
