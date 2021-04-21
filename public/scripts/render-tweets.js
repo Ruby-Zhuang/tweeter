@@ -56,7 +56,7 @@ const createTweetElement = function(tweet) {
   const tweetContent = tweet.content.text;
   
   // Tweet footer
-  const dateCreated = tweet.created_at;
+  const dateCreated = timeago.format(tweet.created_at);
   const icons = `<i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i>`;
   
   // Create tweet markup
@@ -68,7 +68,7 @@ const createTweetElement = function(tweet) {
       </header>
       <p>${tweetContent}</p>
       <footer>
-        <span class="timeago" datetime="${dateCreated}"></span>
+        <span>${dateCreated}</span>
         <span>${icons}</span>
       </footer>
     </article>
