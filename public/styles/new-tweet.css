@@ -34,10 +34,11 @@ main button {
 #error-message {
   margin: 1rem 0 1rem;
   padding: 1rem 0 1rem;
-  display: hidden;
+  display: none;
 
-  color: #ff6060;
-  border: 2px solid #ff6060;
+  color: #1b262c;
+  background-color: #FF9393;
+  border-radius: 8px;
 
   text-align: center;
 }

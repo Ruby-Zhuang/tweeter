@@ -24,11 +24,12 @@ const submitHandler = function(event) {
     data: newTweet
   }).then(() => {
     resetForm();
-    addNewTweet();
+    loadNewTweet();
   });
 };
 
 $(document).ready(function() {
+  // Loads and renders current database of tweets
   loadTweets();
   // Add event listener for submit on the new-tweet form
   $('.new-tweet form').on('submit', submitHandler);

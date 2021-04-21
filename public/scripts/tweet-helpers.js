@@ -8,7 +8,7 @@ const resetForm = function() {
   $('.counter').text(140);   // Reset counter
 };
 
-const addNewTweet = function() {
+const loadNewTweet = function() {
   // GET request to the /tweets endpoint using AJAX to get all the tweets (default is JSON)
   $.ajax('/tweets')
     .then((tweets) => {

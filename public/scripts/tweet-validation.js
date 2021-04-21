@@ -11,12 +11,12 @@ const tweetValidation = function() {
 
   // Error for exceeding character limit
   if (charAvailable < 0) {
-    return "Exceeded character count!";
+    return "❌  <strong>Error:</strong> Exceeded character count!";
   }
 
   // Error for nothing entered
   if (charCounter === 0) {
-    return "Please enter a valid tweet!";
+    return "❌  <strong>Error:</strong> Please enter a valid tweet!";
   }
 
   return errorResult;
