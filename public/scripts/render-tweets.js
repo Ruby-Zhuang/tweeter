@@ -2,31 +2,18 @@
  * Client-side JS logic to render tweets
  * jQuery is already loaded
  */
-// Fake data taken from initial-tweets.json
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-];
+
+// Fetch and load all the current tweets
+const loadTweets = function() {
+  // GET request to the /tweets endpoint using AJAX to get all the tweets
+  $.ajax({
+    url: '/tweets',
+    method: 'GET',
+    dataType: 'JSON'
+  }).then((tweets) => {
+    renderTweets(tweets);
+  });
+};
 
 /*
  * Render all the tweets in the tweet-container section
@@ -34,7 +21,6 @@ const data = [
  * Function: calling createTweetElement on each tweet object and appending each one to the #tweets-container
  */
 const renderTweets = function(tweets) {
-  // loops through tweets
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
     $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
@@ -76,7 +62,3 @@ const createTweetElement = function(tweet) {
 
   return $tweet;
 };
-
-$(document).ready(function() {
-  renderTweets(data);
-});
