@@ -50,7 +50,7 @@ article.tweet p {
 article.tweet footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
 
   color: #515151;
   font-size: 1.1rem;

@@ -3,6 +3,22 @@
  * jQuery is already loaded
  */
 
+const resetForm = function() {
+  $('#tweet-text').val('');  // Clear textarea
+  $('.counter').text(140);   // Reset counter
+};
+
+const addNewTweet = function() {
+  // GET request to the /tweets endpoint using AJAX to get all the tweets (default is JSON)
+  $.ajax('/tweets')
+    .then((tweets) => {
+      // Get last/most recent tweet element and prepend it
+      const newTweet = tweets[tweets.length - 1];
+      const newTweetElement = createTweetElement(newTweet);
+      $('#tweets-container').prepend(newTweetElement);
+    });
+};
+
 // Fetch and load all the current tweets
 const loadTweets = function() {
   // GET request to the /tweets endpoint using AJAX to get all the tweets (default is JSON)
@@ -38,7 +54,7 @@ const createTweetElement = function(tweet) {
   const handle = tweet.user.handle;
   
   // Tweet content
-  const tweetContent = tweet.content.text;
+  const tweetContent = escape(tweet.content.text);
   
   // Tweet footer
   const dateCreated = timeago.format(tweet.created_at);
@@ -60,4 +76,14 @@ const createTweetElement = function(tweet) {
   `;
 
   return $tweet;
+};
+
+//Preventing XSS with Escaping
+const escape = function(strFromUser) {
+  const div = document.createElement('div');
+  const strFromUserNode = document.createTextNode(strFromUser);
+  div.appendChild(strFromUserNode);
+
+  const safeStrFromUser = div.innerHTML;
+  return safeStrFromUser;
 };
