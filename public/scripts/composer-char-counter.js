@@ -13,7 +13,7 @@ const inputEvent = function(event) {
   const charAvailable = maxChar - charCounter;
   const counter = $(this).parent().find('.counter');
 
-  console.log(counter);
+  //debugger
   // Change counter colour if user exceeds character limit
   if (charAvailable < 0) {
     counter.addClass('exceeded-limit');
