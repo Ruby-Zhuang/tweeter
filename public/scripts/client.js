@@ -22,6 +22,7 @@ const submitHandler = function(event) {
   }).then(() => {
     $(this).find('#tweet-text').val('');  // Clear textarea
     $(this).find('.counter').text(140);   // Reset counter
+    loadTweets();
   });
 };
 

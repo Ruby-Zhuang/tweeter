@@ -58,7 +58,7 @@ article.tweet footer {
 
 /* Tweet icons */
 article.tweet footer i {
-  padding-left: 2px;
+  padding-left: 0.2rem;
   color: #F98AAC;
 }
 

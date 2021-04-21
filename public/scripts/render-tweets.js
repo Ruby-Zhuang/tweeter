@@ -18,7 +18,9 @@ const loadTweets = function() {
  * Function: calling createTweetElement on each tweet object and appending each one to the #tweets-container
  */
 const renderTweets = function(tweets) {
-  for (const tweet of tweets) {
+  $('#tweets-container').empty(); // Empty all tweets before rendering
+  const orderedTweets = tweets.sort((a, b) => b.created_at - a.created_at); // Sorts with most recent tweets first
+  for (const tweet of orderedTweets) {
     const $tweet = createTweetElement(tweet);
     $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
   }
