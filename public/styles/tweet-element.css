@@ -3,9 +3,11 @@
 */
 /* TWEET CONTAINER */
 .tweet {
-  border: 0.2rem solid #1b262c;
+  /* border: 0.2rem solid #1b262c; */
   border-radius: 12px;
   padding: 1.5rem;
+
+  background-color: #E4FFFE;
 }
 
 /* TWEET HEADER (AVATAR, NAME AND HANDLE) */
