@@ -3,7 +3,7 @@
 Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX.
 
 ## Final Product
-!["Screenshot description"](url)
+!["Screenshot Test"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/ezgif.com-gif-maker.gif?raw=true)
 !["Screenshot description"](url)
 !["Screenshot description"](url)
 !["Screenshot description"](url)
