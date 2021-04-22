@@ -58,7 +58,8 @@
 /* Mobile: screens with width 768px and below */
 @media only screen and (max-width: 768px) {
   nav {
-    background-color: inherit;
+    background-color: #C4F1F1;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   }
 
   /* Prohibit icon for error message: decrease margin on the right side */

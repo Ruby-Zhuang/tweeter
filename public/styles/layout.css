@@ -18,6 +18,7 @@ html {
   /* Set min-height of html element to 100% of the viewport so that the body can inherit this height*/
   min-height: 100%;
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 body {
