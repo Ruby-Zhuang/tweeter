@@ -1,5 +1,5 @@
 /*
- * Client-side JS logic to implement form togglng
+ * Client-side JS logic to implement form togglng and scrolling
  * jQuery is already loaded
  */
 
@@ -13,13 +13,13 @@ const handleCompose = function() {
 const handleScroll = function() {
   // Show scroll to top button only if user has scrolled a certain amount
   if ($(window).scrollTop() > 100) {
-    $('.fa-angle-double-up').show();
+    $('#back-to-top-btn').show();
   } else {
-    $('.fa-angle-double-up').hide();
+    $('#back-to-top-btn').hide();
   }
 };
 
-// Back to top hander
+// Back to top button hander
 const handleBackToTop = function() {
   $('.new-tweet').slideDown();
   $('#tweet-text').focus();
@@ -30,5 +30,5 @@ const handleBackToTop = function() {
 $(document).ready(function() {
   $('.navbar').on('click', handleCompose);
   $(window).on('scroll', handleScroll);
-  $('.fa-angle-double-up').on('click', handleBackToTop);
+  $('#back-to-top-btn').on('click', handleBackToTop);
 });
