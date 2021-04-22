@@ -8,7 +8,7 @@ const submitHandler = function(event) {
   event.preventDefault(); // Prevent page from refreshing
   const newTweet = $(this).serialize(); // Serializes form data into a query string
 
-  $('#error-message').slideUp();
+  $('#error-message').slideUp(); // Always slide up before validation to hide error message before re-rendering if necessary
   
   // Tweet validation
   const tweetError = tweetValidation();
@@ -23,6 +23,7 @@ const submitHandler = function(event) {
     method: 'POST',
     data: newTweet
   }).then(() => {
+    // Reset new tweet form and load only the new tweet
     resetForm();
     loadNewTweet();
   });

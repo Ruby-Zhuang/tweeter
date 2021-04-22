@@ -29,11 +29,30 @@ nav span {
 .navbar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  cursor: url('https://img.icons8.com/cotton/64/000000/edit--v1.png'), pointer;
 }
+
 
 /* Compose icon */
 .fa-angle-double-down {
   color: #ff6060;
+  transform: scale(1);
+  animation: pulse 1.5s ease infinite;
+}
+
+/* For icon animation */
+@keyframes pulse {
+	0% {
+    transform: translateY(0%);
+		color: #FF9494;
+	}
+	50% {
+    transform: translateY(100%);
+		color: #FF4747;
+	}
+	100% {
+    transform: translateY(0%);
+		color: #FF9494;
+	}
 }

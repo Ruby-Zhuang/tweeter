@@ -21,6 +21,3 @@ const inputEvent = function() {
 $(document).ready(function() {
   $('#tweet-text').on('input', inputEvent);
 });
-
-// 140 CHARACTERS TEST (DELETE AFTER)
-// Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad miasd
