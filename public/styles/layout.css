@@ -4,6 +4,8 @@
  * Do not modify these two selectors, please
  */
 html {
+  /* Set min-height of html element to 100% of the viewport so that the body can inherit this height*/
+  min-height: 100%;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -15,8 +17,9 @@ html {
  */
 
 body {
+  /* Set min-height of body element to 100% of the viewport so that background gradient colours encompases the whole body */
+  min-height: 100%;
   color: #1b262c;
-  /* background-color: #bbe1fa; */
   background: linear-gradient(to bottom right, #FFB3C8, #C4F1F1);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
@@ -38,6 +41,7 @@ main {
 /* All sections in the main element */
 main section {
   width: 100%;
+  max-width: 50rem;
   margin-bottom: 2em;
 }
 

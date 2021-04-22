@@ -5,7 +5,7 @@
 
 const tweetValidation = function() {
   const maxChar = 140;
-  const charCounter = $('#tweet-text').val().length;
+  const charCounter = $('#tweet-text').val().trim().length;
   const charAvailable = maxChar - charCounter;
   let errorResult = null;
 

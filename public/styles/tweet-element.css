@@ -3,7 +3,6 @@
 */
 /* TWEET CONTAINER */
 .tweet {
-  /* border: 0.2rem solid #1b262c; */
   border-radius: 12px;
   margin: 2.5rem 0;
   padding: 1.5rem;
@@ -44,6 +43,7 @@ article.tweet p {
   margin-bottom: 0;
   padding-bottom: 0.75rem;
   border-bottom: 0.2rem solid #1b262c;
+  word-break: break-all;
 }
 
 /* TWEET FOOTER (DATE AND ICONS) */

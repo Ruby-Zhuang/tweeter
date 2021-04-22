@@ -5,14 +5,51 @@
 
 /* Desktop: screens with width 900px and above */
 @media only screen and (min-width: 1024px) {
-  nav {
-    background-color: red;
-  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 90%;
+    margin: auto;
+    padding-top: 175px;
   }
 
-  /* Mobile: screens with width 768px and below */
-  @media only screen and (max-width: 768px) {
+  .profile {
+    flex-basis: 40%;
+    margin: 0 2rem;
+    padding-top: 0px;
+    height: 400px;
+    border-radius: 20px;
+  }
+
+  /* New tweet text section */
+  main .new-tweet {
+    margin-top: 0;
+  }
+
+  main {
+    align-items: flex-end;
+    margin: 0 2rem;
+  }
+
+  #tweet-text {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  #error-message{
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .tweet {
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+/* Mobile: screens with width 768px and below */
+@media only screen and (max-width: 768px) {
   nav {
-    background-color: green;
+    background-color: inherit;
   }
-  }
+}

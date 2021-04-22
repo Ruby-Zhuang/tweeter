@@ -10,7 +10,7 @@ main button {
   color: #1b262c;
 }
 
-/* New tweet section */
+/* New tweet text section */
 main .new-tweet {
   display: none;
 }
