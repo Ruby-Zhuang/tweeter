@@ -36,23 +36,17 @@ nav span {
 
 /* Compose icon */
 .fa-angle-double-down {
-  color: #ff6060;
-  transform: scale(1);
   animation: pulse 1.5s ease infinite;
 }
 
 /* For icon animation */
 @keyframes pulse {
-	0% {
+	0%, 100% {
     transform: translateY(0%);
 		color: #FF9494;
 	}
 	50% {
     transform: translateY(100%);
 		color: #FF4747;
-	}
-	100% {
-    transform: translateY(0%);
-		color: #FF9494;
 	}
 }

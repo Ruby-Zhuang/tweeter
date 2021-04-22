@@ -15,8 +15,8 @@ main .new-tweet {
   display: none;
 }
 
-/* Footer of new tweet (tweet button and character counter) */
-.new-tweet div {
+/* Footer of new tweet in the form element (tweet button and character counter) */
+.new-tweet form div {
   display: flex;
   justify-content: space-between;
 
@@ -36,17 +36,30 @@ main .new-tweet {
   resize: none;
 }
 
-/* Error message */
+/* Error message paragraph */
 #error-message {
   margin: 1rem 0 1rem;
   padding: 1rem 0 1rem;
   display: none;
 
-  color: #1b262c;
-  background-color: #FF9393;
+  color: white;
+  background-color: #ff6060;
   border-radius: 8px;
 
   text-align: center;
+}
+
+/* Error message div so that display flex can be used */
+#error-message div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Prohibit icon for error message */
+.fa-ban {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 /* Added to text counter once character limit is exceeded */

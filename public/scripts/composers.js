@@ -12,9 +12,9 @@ const handleScroll = function() {
   $('.fa-angle-double-up').show();
 
   $('.fa-angle-double-up').on('click', () => {
+    $('.fa-angle-double-up').hide();
     $('.new-tweet').slideDown();
     $(window).scrollTop(0);
-    $('.fa-angle-double-up').hide();
   });
 };
 
