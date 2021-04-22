@@ -4,8 +4,6 @@
  * Do not modify these two selectors, please
  */
 html {
-  /* Set min-height of html element to 100% of the viewport so that the body can inherit this height*/
-  min-height: 100%;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -15,6 +13,12 @@ html {
 /*
  * Global layout stuff
  */
+
+html {
+  /* Set min-height of html element to 100% of the viewport so that the body can inherit this height*/
+  min-height: 100%;
+  min-width: 320px;
+}
 
 body {
   /* Set min-height of body element to 100% of the viewport so that background gradient colours encompases the whole body */

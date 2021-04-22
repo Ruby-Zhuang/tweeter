@@ -1,10 +1,12 @@
 /*
- * media queries for responsive design
- * default design is for tablets (768px - 1024px)
+ * Media queries for responsive design
+ * Default design is for tablets (768px - 1024px)
  */
 
 /* Desktop: screens with width 900px and above */
 @media only screen and (min-width: 1024px) {
+
+  /* Overall container of the header and main sections (profile and tweets) */
   .flex-container {
     display: flex;
     justify-content: space-between;
@@ -14,6 +16,7 @@
     padding-top: 175px;
   }
 
+  /* Header element (user profile with avatar and name) */
   .profile {
     flex-basis: 40%;
     margin: 0 2rem;
@@ -22,25 +25,30 @@
     border-radius: 20px;
   }
 
-  /* New tweet text section */
+  /* New tweet text section to align top of tweet with profile */
   main .new-tweet {
     margin-top: 0;
   }
 
+  /* Container for the tweets (error message, new tweet form, posted tweets) */
   main {
     align-items: flex-end;
     margin: 0 2rem;
   }
 
+  /* Error message:set margin-top to 0 for all tweets so top of error message aligns with profile  */
+  #error-message {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Textarea for user input: set margin-top to 0 so that top of text area aligns with profile   */
   #tweet-text {
     margin: 0;
     margin-bottom: 1rem;
   }
 
-  #error-message{
-    margin: 0;
-    margin-bottom: 2rem;
-  }
+  /* Tweets: set margin-top to 0 for all tweets so that first one aligns with profile */
   .tweet {
     margin: 0;
     margin-bottom: 5rem;
@@ -51,5 +59,29 @@
 @media only screen and (max-width: 768px) {
   nav {
     background-color: inherit;
+  }
+
+  /* Prohibit icon for error message: decrease margin on the right side */
+  .fa-ban {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Mobile: screens with width 420px and below */
+@media only screen and (max-width: 420px) {
+
+  /* Wrap navbar logo and compose tweet button vertically */
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile {
+    height: 450px;
+  }
+
+  .profile img {
+    width: 200px;
   }
 }
