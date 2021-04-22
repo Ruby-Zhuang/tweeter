@@ -33,12 +33,29 @@ main {
   
   margin: auto;
   width: 90%;
-  
-  /* remove this after */
-  /* height: 900px; */
 }
 
-section {
+/* All sections in the main element */
+main section {
   width: 100%;
   margin-bottom: 2em;
+}
+
+/* Scroll form button */
+.fa-angle-double-up {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: none;
+
+  height: 75px;
+  width: 75px;
+  padding-top: 12px;
+  border-radius: 100%;
+  text-align: center;
+
+  font-size: 3rem;
+  color: white;
+  background-color: tomato;
+  cursor: pointer;
 }
