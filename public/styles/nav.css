@@ -42,10 +42,10 @@ nav span {
 @keyframes pulse {
 	0%, 100% {
     transform: translateY(0%);
-		color: #FF9494;
+		color: #FFB3C8;
 	}
 	50% {
     transform: translateY(100%);
-		color: #FF4747;
+		color: #F98AAC;
 	}
 }

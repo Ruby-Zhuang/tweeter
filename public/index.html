@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="/styles/tweet-element.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/media-queries.css" type="text/css" />
 
   <!-- Add in custom fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,7 +28,9 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/tweet-helpers.js"></script>
@@ -48,37 +51,40 @@
     </div>
   </nav>
 
-  <!-- Header layout -->
-  <header class="profile">
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Bubble Tea</h2>
-    </div>
-  </header>
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <!-- New tweet form section -->
-    <section class="new-tweet">
-      <p id="error-message"></p>
-      <form method="POST" action="/tweets">
-        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-        <div>
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
+  <div class="container">
+    <!-- Header layout -->
+    <header class="profile">
+      <div>
+        <img src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <h2>Bubble Tea</h2>
+      </div>
+    </header>
 
-    <!-- Posted tweets (uses client-side rendering) -->
-    <section id="tweets-container">
-    </section>
+    <!-- Page-specific (main) content here -->
+    <main>
+      <!-- New tweet form section -->
+      <section class="new-tweet">
+        <p id="error-message"></p>
+        <form method="POST" action="/tweets">
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
 
-    <!-- Second form toggle buttom that appears when user scrolls (fixed to bottom right corner)-->
-    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
-  </main>
+      <!-- Posted tweets (uses client-side rendering) -->
+      <section id="tweets-container">
+      </section>
+    </main>
+  </div>
+  <!-- Second form toggle buttom that appears when user scrolls (fixed to bottom right corner)-->
+  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
 </body>
+
 </html>
