@@ -23,7 +23,7 @@ html {
 body {
   /* Set min-height of body element to 100% of the viewport so that background gradient colours encompases the whole viewport */
   min-height: 100%;
-  color: #1b262c;
+  color: #585858;
   background: linear-gradient(to bottom right, #FFB3C8, #C4F1F1);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;

@@ -13,7 +13,7 @@ nav {
   z-index: 1;
 
   background-color: #72DCCA;
-  color: #1b262c;
+  color: #484848;
 }
 
 /* Nav tweeter brand logo*/
@@ -23,6 +23,7 @@ nav span {
 
   font-family: 'Bungee', sans-serif;
   font-size: 2rem;
+  text-shadow: 2px 2px 2px #FFB3C8;
 }
 
 /* Navbar right side (text and compose icon) */

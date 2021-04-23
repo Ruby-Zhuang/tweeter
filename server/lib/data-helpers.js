@@ -7,7 +7,7 @@ const simulateDelay = require("./util/simulate-delay");
 module.exports = function makeDataHelpers(db) {
   return {
 
-    // Saves a tweet to `db`
+    // Saves a tweet to `db` (for POST requests)
     saveTweet: function(newTweet, callback) {
       simulateDelay(() => {
         db.tweets.push(newTweet);
@@ -15,10 +15,10 @@ module.exports = function makeDataHelpers(db) {
       });
     },
 
-    // Get all tweets in `db`, sorted by newest first
+    // Get all tweets in `db`, sorted by newest first (for GET requests)
     getTweets: function(callback) {
       simulateDelay(() => {
-        const sortNewestFirst = (a, b) => a.created_at - b.created_at;
+        const sortNewestFirst = (a, b) => a.created_at - b.created_at;  // This actually seems to be sorting by newest last
         callback(null, db.tweets.sort(sortNewestFirst));
       });
     }

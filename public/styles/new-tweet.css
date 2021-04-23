@@ -7,7 +7,7 @@ main button {
   border-radius: 4px;
 
   background-color: #72DCCA;
-  color: #1b262c;
+  color: #585858;
 }
 
 /* New tweet text section: hide on default */
@@ -18,7 +18,7 @@ main .new-tweet {
 /* Textbox input */
 #tweet-text {
   border: none;
-  border-bottom: 0.2rem solid #1b262c;
+  border-bottom: 0.2rem solid #585858;
   margin: 2rem auto 1rem;
   outline: none;
   width: 100%;
