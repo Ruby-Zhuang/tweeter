@@ -3,13 +3,12 @@
 Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX.
 
 ## Final Product
-#### Features (Compose Buttons in Navigation Bar & Upon Scrolling)
-!["Compose-button-features-gif"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Composer-features-and-hover.gif?raw=true)
+#### Special Features (Compose Buttons in Navigation Bar & Bottom-Right Upon Scrolling)
+<img width="100%" src="https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Composer-features-and-hover.gif?raw=true" alt="Compose-button-features-gif">
 #### Composing a Tweet (with Error Validation)
-!["Compose-tweet-gif"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Composing-tweet-with-error-validation.gif?raw=true)
-#### Responsive Design (from Desktop → Tablet → Mobile)
-!["Responsive-design-gif"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Responsive-design.gif?raw=true)
-  <img width="100%" src="https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Responsive-design.gif?raw=true">
+<img width="100%" src="https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Composing-tweet-with-error-validation.gif?raw=true" alt="Compose-tweet-gif">
+#### Responsive Design (from Desktop/Laptop → Tablet → Mobile)
+<img width="100%" src="https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Responsive-design.gif?raw=true" alt="Responsive-design-gif">
 
 
 ## Dependencies
