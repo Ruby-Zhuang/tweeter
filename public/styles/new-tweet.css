@@ -1,5 +1,5 @@
 /*
-* new-tweet styles
+* New-tweet styles
 */
 main button {
   padding: 0.5rem;
@@ -10,17 +10,9 @@ main button {
   color: #1b262c;
 }
 
-/* New tweet text section */
+/* New tweet text section: hide on default */
 main .new-tweet {
   display: none;
-}
-
-/* Footer of new tweet in the form element (tweet button and character counter) */
-.new-tweet form div {
-  display: flex;
-  justify-content: space-between;
-
-  font-family: 'Bungee', sans-serif;
 }
 
 /* Textbox input */
@@ -30,23 +22,22 @@ main .new-tweet {
   margin: 2rem auto 1rem;
   outline: none;
   width: 100%;
-
+  
   background: transparent;
   color: #1b262c;
   resize: none;
 }
 
-/* Error message paragraph */
-#error-message {
-  margin: 2rem 0 1rem;
-  padding: 1rem;
-  display: none;
+/* Footer of new tweet in the form element (tweet button and character counter) */
+.new-tweet form div {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+}
 
-  color: white;
-  background-color: #ff6060;
-  border-radius: 8px;
-
-  text-align: center;
+/* Class added to text counter once character limit is exceeded and removed otherwise */
+.exceeded-limit {
+  color: #ff6060;
 }
 
 /* Error message div so that display flex can be used */
@@ -62,7 +53,15 @@ main .new-tweet {
   margin-right: 1rem;
 }
 
-/* Added to text counter once character limit is exceeded */
-.exceeded-limit {
-  color: #ff6060;
+/* Error message paragraph */
+#error-message {
+  margin: 2rem 0 1rem;
+  padding: 1rem;
+  display: none;
+
+  color: white;
+  background-color: #ff6060;
+  border-radius: 8px;
+
+  text-align: center;
 }

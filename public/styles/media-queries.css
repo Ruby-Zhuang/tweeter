@@ -3,7 +3,7 @@
  * Default design is for tablets (768px - 1024px)
  */
 
-/* Desktop: screens with width 900px and above */
+/* Desktop: screens with width 1024px and above */
 @media only screen and (min-width: 1024px) {
 
   /* Overall container of the header and main sections (profile and tweets) */
@@ -36,7 +36,7 @@
     margin: 0 2rem;
   }
 
-  /* Error message:set margin-top to 0 for all tweets so top of error message aligns with profile  */
+  /* Error message: set margin-top to 0 for all tweets so top of error message aligns with profile  */
   #error-message {
     margin: 0;
     margin-bottom: 2rem;

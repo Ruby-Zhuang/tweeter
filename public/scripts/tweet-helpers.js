@@ -19,7 +19,7 @@ const loadNewTweet = function() {
     });
 };
 
-// Fetch and load all the current tweets
+// Fetch and load all the current tweets (this only occurs once at the beginning)
 const loadTweets = function() {
   // GET request to the /tweets endpoint using AJAX to get all the tweets (default is JSON)
   $.ajax('/tweets')
@@ -34,7 +34,6 @@ const loadTweets = function() {
  * Function: calling createTweetElement on each tweet object and appending each one to the #tweets-container
  */
 const renderTweets = function(tweets) {
-  $('#tweets-container').empty(); // Empty all tweets before rendering
   const orderedTweets = tweets.sort((a, b) => b.created_at - a.created_at); // Sorts with most recent tweets first
   for (const tweet of orderedTweets) {
     const $tweet = createTweetElement(tweet);
@@ -78,7 +77,7 @@ const createTweetElement = function(tweet) {
   return $tweet;
 };
 
-//Preventing XSS with Escaping
+//Preventing XSS with escaping
 const escape = function(strFromUser) {
   const div = document.createElement('div');
   const strFromUserNode = document.createTextNode(strFromUser);

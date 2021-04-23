@@ -1,16 +1,15 @@
 /*
 * Posted tweets styles
 */
-/* TWEET CONTAINER */
+/* Tweet article container (one per tweet) */
 .tweet {
   border-radius: 12px;
   margin: 2.5rem 0;
   padding: 1.5rem;
-
   background-color: #E4FFFE;
 }
 
-/* TWEET HEADER (AVATAR, NAME AND HANDLE) */
+/* Tweet header container (avatar, name and handle) */
 article.tweet header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +22,7 @@ article.tweet img {
   width: 40px;
 }
 
-/* Tweet's username */
+/* Tweeter's username */
 article.tweet .username {
   display: flex;
   align-items: center;
@@ -31,7 +30,7 @@ article.tweet .username {
   font-weight: bold;
 }
 
-/* Tweet's handle */
+/* Tweeter's handle */
 article.tweet .handle{
   color: #515151;
   font-size: 1.5rem;
@@ -46,27 +45,27 @@ article.tweet p {
   word-break: break-all;
 }
 
-/* TWEET FOOTER (DATE AND ICONS) */
+/* Tweet footer (date and icons) */
 article.tweet footer {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5rem;
-
   color: #515151;
   font-size: 1.1rem;
 }
 
-/* Tweet icons */
+/* Tweet footer icons */
 article.tweet footer i {
   padding-left: 0.2rem;
   color: #F98AAC;
 }
 
-/* HOVER STATES*/
+/* Hover state for tweet container */
 .tweet:hover {
   box-shadow: 6px 6px 2px 5px #FFB3C8;
 }
 
+/* Hover state for each footer icon */
 article.tweet footer i:hover {
   color: #72DCCA;
 }

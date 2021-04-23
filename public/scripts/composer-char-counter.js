@@ -19,5 +19,6 @@ const inputEvent = function() {
 };
 
 $(document).ready(function() {
+  // On text input to the form/textarea
   $('#tweet-text').on('input', inputEvent);
 });

@@ -3,32 +3,30 @@
  * jQuery is already loaded
  */
 
-// Write a new tweet handler
+// Toggle the form and auto-focus inside the textarea when navbar compose button is clicked
 const handleCompose = function() {
   $('.new-tweet').slideToggle('slow');
   $('#tweet-text').focus();
 };
 
-// Scroll hander
+// Show/hide second toggle bottom on bottom/right corner if user scrolls a certain amount from the top
 const handleScroll = function() {
-  // Show scroll to top button only if user has scrolled a certain amount
-  if ($(window).scrollTop() > 100) {
+  if ($(window).scrollTop() > 75) {
     $('#back-to-top-btn').show();
   } else {
     $('#back-to-top-btn').hide();
   }
 };
 
-// Back to top button hander
+// Scroll back to top and show focused form if second toggle button is clicked
 const handleBackToTop = function() {
   $('.new-tweet').slideDown();
   $('#tweet-text').focus();
   $(window).scrollTop(0);
 };
 
-// Add event listeners for compose buttons when document is loaded
 $(document).ready(function() {
-  $('.navbar').on('click', handleCompose);
-  $(window).on('scroll', handleScroll);
-  $('#back-to-top-btn').on('click', handleBackToTop);
+  $('.navbar').on('click', handleCompose);            // Event listener for clicks on the navbar button
+  $(window).on('scroll', handleScroll);               // Event listener for when user scrolls
+  $('#back-to-top-btn').on('click', handleBackToTop); // Event listener for clicks on the lower right button
 });

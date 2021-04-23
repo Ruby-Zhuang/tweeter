@@ -15,14 +15,14 @@ html {
  */
 
 html {
-  /* Set min-height of html element to 100% of the viewport so that the body can inherit this height*/
+  /* Set min-height of html element to 100% of the viewport so that the body can inherit this height */
   min-height: 100%;
   min-width: 320px;
   scroll-behavior: smooth;
 }
 
 body {
-  /* Set min-height of body element to 100% of the viewport so that background gradient colours encompases the whole body */
+  /* Set min-height of body element to 100% of the viewport so that background gradient colours encompases the whole viewport */
   min-height: 100%;
   color: #1b262c;
   background: linear-gradient(to bottom right, #FFB3C8, #C4F1F1);
@@ -43,19 +43,19 @@ main {
   width: 90%;
 }
 
-/* All sections in the main element */
+/* All section containers in the main element */
 main section {
   width: 100%;
   max-width: 50rem;
   margin-bottom: 2em;
 }
 
-/* Scroll to top form button */
+/* Scroll-to-top button */
 #back-to-top-btn {
+  display: none;
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  display: none;
 
   height: 75px;
   width: 75px;
