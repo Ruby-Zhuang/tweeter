@@ -4,11 +4,11 @@ Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery 
 
 ## Final Product
 #### Features (Compose Buttons in Navigation Bar & Upon Scrolling)
-!["Compose-button-features-gif"](url)
+!["Compose-button-features-gif"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Composer-features-and-hover.gif?raw=true)
 #### Composing a Tweet (with Error Validation)
-!["Compose-tweet-gif"](url)
+!["Compose-tweet-gif"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Composing-tweet-with-error-validation.gif?raw=true)
 #### Responsive Design (from Desktop → Tablet → Mobile)
-!["Responsive-design-gif"](url)
+!["Responsive-design-gif"](https://github.com/Ruby-Zhuang/tweeter/blob/master/docs/Responsive-design.gif?raw=true)
 
 ## Dependencies
 
