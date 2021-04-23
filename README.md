@@ -3,11 +3,12 @@
 Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX.
 
 ## Final Product
-!["Screenshot Test"](url)
-!["Screenshot description"](url)
-!["Screenshot description"](url)
-!["Screenshot description"](url)
-
+#### Features (Compose Buttons in Navigation Bar & Upon Scrolling)
+!["Compose-button-features-gif"](url)
+#### Composing a Tweet (with Error Validation)
+!["Compose-tweet-gif"](url)
+#### Responsive Design (from Desktop → Tablet → Mobile)
+!["Responsive-design-gif"](url)
 
 ## Dependencies
 
