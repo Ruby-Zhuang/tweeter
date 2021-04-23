@@ -65,3 +65,9 @@ main .new-tweet {
 
   text-align: center;
 }
+
+/* Hover state for tweet button */
+main button:hover {
+  box-shadow: 3px 3px 2px 2px #FFB3C8;
+  cursor: pointer;
+}

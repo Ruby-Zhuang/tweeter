@@ -62,7 +62,7 @@ article.tweet footer i {
 
 /* Hover state for tweet container */
 .tweet:hover {
-  box-shadow: 6px 6px 2px 5px #FFB3C8;
+  box-shadow: 6px 8px 6px 5px #FFB3C8;
 }
 
 /* Hover state for each footer icon */
